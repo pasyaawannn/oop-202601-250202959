@@ -1,6 +1,6 @@
 # Minggu 1: Paradigma Pemrograman dan Setup
 
-Bobot: Quiz 2%, Praktikum 3%, Observasi 1%
+Bobot: Quiz 2%, Praktikum 3%, Observasi 1%.
 
 ## Tujuan
 

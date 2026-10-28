@@ -20,10 +20,24 @@ Salin setiap pertanyaan ambigu (nomor 1 sampai 7) ke sini dan jawab. Contoh:
 
 ## A-01: batas waktu bentrok
 - Pertanyaan: 09:00-11:00 dan 11:00-13:00 pada aset yang sama bentrok atau tidak?
-- Keputusan: (isi)
-- Alasan: (isi)
-- Dampak ke kode: (isi)
-- Tes yang membuktikan: (isi)
+- Keputusan: tidak bentrok
+- Alasan: waktu selesai peminjaman pertama sama dengan waktu mulai peminjaman kedua, tidak tumpang tindih
+- Dampak ke kode: (belum diimplementasi)
+- Tes yang membuktikan: (belum implementasi)
+
+## A-02: perhitungan denda per hari
+- Pertanyaan: bagaimana denda dihitung bila terlambat 1 menit atau 25 jam?
+- Keputusan: dibulatkan ke atas, 1 menit = 1 hari, 25 jam = 2 hari
+- Alasan: sistem hanya mengenal hari bulat
+- Dampak ke kode: hitungDenda()
+- Tes yang membuktikan: (belum diimplementasi)
+
+## A-03: normalisasi kode aset
+- Pertanyaan: apakah kode aset perlu di-trim atau diubah ke huruf besar?
+- Keputusan: tidak dinormalisasi
+- Alasan: soal tidak mewajibkan
+- Dampak ke kode: Aset.java konstruktor
+- Tes yang membuktikan: Minggu02AsetTest
 
 ## Asumsi lain
 

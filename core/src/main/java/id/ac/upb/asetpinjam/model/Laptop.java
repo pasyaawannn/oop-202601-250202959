@@ -1,4 +1,5 @@
 package id.ac.upb.asetpinjam.model;
+import id.ac.upb.asetpinjam.config.Varian;
 
 public class Laptop extends Aset {
 
@@ -30,7 +31,11 @@ public class Laptop extends Aset {
         return JenisAset.LAPTOP;
     }
 
+    @Override
     public long hitungDenda(int hariTerlambat) {
-        throw new UnsupportedOperationException("TODO minggu 4");
+    if (hariTerlambat < 0) {
+        throw new IllegalArgumentException("Hari tidak boleh negatif");
+    }
+    return (long) hariTerlambat * 2 * Varian.aktif().dendaPerHari;
     }
 }

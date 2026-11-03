@@ -39,6 +39,13 @@ Salin setiap pertanyaan ambigu (nomor 1 sampai 7) ke sini dan jawab. Contoh:
 - Dampak ke kode: Aset.java konstruktor
 - Tes yang membuktikan: Minggu02AsetTest
 
+## A-04: rumus denda progresif
+- Pertanyaan: bagaimana rumus denda progresif yang makin berat saat makin lama?
+- Keputusan: progresif = flat + (flat x hari / 10)
+- Alasan: makin lama makin mahal, tidak pernah lebih murah dari flat, dan hari 0 = 0
+- Dampak ke kode: DendaProgresif.java
+- Tes yang membuktikan: Minggu05AbstraksiTest
+
 ## Asumsi lain
 
 Tambahkan di sini keputusan lain yang Anda ambil: rumus denda progresif, perubahan skema database, format error API, dan seterusnya.

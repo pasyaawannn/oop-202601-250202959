@@ -1,0 +1,18 @@
+sequenceDiagram
+    actor Peminjam
+    participant JP as JadwalPeminjaman
+    participant A as Aset
+    participant P as Peminjaman
+
+    Peminjam->>JP: ajukan(baru)
+
+    alt tidak bentrok
+        JP->>JP: bentrok(baru) = false
+        JP->>A: bisaDipinjam()
+        A-->>JP: true
+        JP->>P: tambah(baru)
+        JP-->>Peminjam: status DIAJUKAN
+    else bentrok
+        JP->>JP: bentrok(baru) = true
+        JP-->>Peminjam: PeminjamanBentrokException
+    end
